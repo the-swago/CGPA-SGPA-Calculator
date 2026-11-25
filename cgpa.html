@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KTU CGPA Calculator</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="blob three"></div>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <span>KTU Calculator</span>
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="sgpa.html">SGPA</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main Card -->
+
+    <section class="hero">
+
+        <div class="glass-card">
+
+            <h1>
+
+                KTU CGPA Calculator
+
+            </h1>
+
+            <p>
+
+                Calculate your cumulative grade point average.
+
+            </p>
+
+            <!-- Student Type -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Student Type
+
+                </label>
+
+                <select id="studentType">
+
+                    <option value="">Select Student Type</option>
+
+                    <option value="regular">
+
+                        Regular Student (8 Semesters)
+
+                    </option>
+
+                    <option value="let">
+
+                        LET Student (6 Semesters)
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button class="action-btn" id="generate">
+
+                Generate Semester Fields
+
+            </button>
+
+            <!-- Semester Inputs -->
+
+            <div id="semesterInputs">
+
+            </div>
+
+            <button class="calculate-btn" id="calculateCGPA">
+
+                Calculate CGPA
+
+            </button>
+
+            <button class="action-btn red" id="resetCGPA">
+
+                Reset
+
+            </button>
+
+            <!-- Result -->
+
+            <div id="resultBox">
+
+                <h2>
+
+                    Your CGPA
+
+                </h2>
+
+                <h1 id="cgpaResult">
+
+                    0.00
+
+                </h1>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/cgpa.js"></script>
+
+</body>
+
+</html>

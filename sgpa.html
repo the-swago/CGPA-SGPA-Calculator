@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KTU SGPA Calculator</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<span>KTU Calculator</span>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="cgpa.html">CGPA</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= MAIN ================= -->
+
+<section class="hero">
+
+<div class="glass-card">
+
+<h1>
+
+KTU SGPA Calculator
+
+</h1>
+
+<p>
+
+Calculate your Semester Grade Point Average using the official KTU 2024 Scheme.
+
+</p>
+
+<!-- ================= SELECTORS ================= -->
+
+<div class="form-group">
+
+<label>
+
+Department
+
+</label>
+
+<select id="department">
+
+<option value="">Select Department</option>
+
+<option value="IT">Information Technology</option>
+
+<option value="CSE">Computer Science</option>
+
+<option value="ECE">Electronics & Communication</option>
+
+<option value="EEE">Electrical & Electronics</option>
+
+<option value="ME">Mechanical Engineering</option>
+
+<option value="CE">Civil Engineering</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Semester
+
+</label>
+
+<select id="semester">
+
+<option value="">Select Semester</option>
+
+<option value="S1">Semester 1</option>
+
+<option value="S2">Semester 2</option>
+
+<option value="S3">Semester 3</option>
+
+<option value="S4">Semester 4</option>
+
+<option value="S5">Semester 5</option>
+
+<option value="S6">Semester 6</option>
+
+<option value="S7">Semester 7</option>
+
+<option value="S8">Semester 8</option>
+
+</select>
+
+</div>
+
+<button id="loadSubjects" class="action-btn">
+
+<i class="fa-solid fa-download"></i>
+
+Load Subjects
+
+</button>
+
+<hr>
+
+<!-- ================= SUBJECTS ================= -->
+
+<div id="subjectsContainer">
+
+<!-- Subjects will load here -->
+
+</div>
+
+<!-- ================= BUTTONS ================= -->
+
+<div class="button-row">
+
+<button id="addSubject" class="action-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Subject
+
+</button>
+
+<button id="calculate" class="calculate-btn">
+
+<i class="fa-solid fa-calculator"></i>
+
+Calculate SGPA
+
+</button>
+
+<button id="reset" class="action-btn red">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+Reset
+
+</button>
+
+</div>
+
+<!-- ================= Progress ================= -->
+
+<div class="progress-container">
+
+    <div id="progressBar"></div>
+
+</div>
+
+<!-- ================= RESULT ================= -->
+
+<div id="resultBox">
+
+    <h2>Your SGPA</h2>
+
+    <h1 id="result">
+
+        0.00
+
+    </h1>
+
+    <p id="statistics">
+
+        Total Credits : 0
+
+    </p>
+
+</div>
+
+<!-- NEW BUTTONS -->
+
+<div class="button-row">
+
+    <button id="printResult" class="action-btn">
+        <i class="fa-solid fa-print"></i>
+        Print
+    </button>
+
+    <button id="downloadPDF" class="action-btn green">
+        <i class="fa-solid fa-file-pdf"></i>
+        PDF
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- PDF Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="js/subjects.js"></script>
+<script src="js/sgpa.js"></script>
+
+
+</body>
+</html>
